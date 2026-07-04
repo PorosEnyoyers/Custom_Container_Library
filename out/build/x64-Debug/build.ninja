@@ -57,14 +57,6 @@ build CMakeFiles\circular_buffer_demo.dir\example\Circular_Buffer_demo.cpp.obj: 
   TARGET_COMPILE_PDB = CMakeFiles\circular_buffer_demo.dir\
   TARGET_PDB = circular_buffer_demo.pdb
 
-build CMakeFiles\circular_buffer_demo.dir\example\Binary_Heap_demo.cpp.obj: CXX_COMPILER__circular_buffer_demo_unscanned_Debug C$:\Users\khoip\OneDrive\Desktop\Important\Codes\Custom_Container_Library\example\Binary_Heap_demo.cpp || cmake_object_order_depends_target_circular_buffer_demo
-  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
-  INCLUDES = -IC:\Users\khoip\OneDrive\Desktop\Important\Codes\Custom_Container_Library\include
-  OBJECT_DIR = CMakeFiles\circular_buffer_demo.dir
-  OBJECT_FILE_DIR = CMakeFiles\circular_buffer_demo.dir\example
-  TARGET_COMPILE_PDB = CMakeFiles\circular_buffer_demo.dir\
-  TARGET_PDB = circular_buffer_demo.pdb
-
 
 # =============================================================================
 # Link build statements for EXECUTABLE target circular_buffer_demo
@@ -73,7 +65,7 @@ build CMakeFiles\circular_buffer_demo.dir\example\Binary_Heap_demo.cpp.obj: CXX_
 #############################################
 # Link the executable circular_buffer_demo.exe
 
-build circular_buffer_demo.exe: CXX_EXECUTABLE_LINKER__circular_buffer_demo_Debug CMakeFiles\circular_buffer_demo.dir\example\Circular_Buffer_demo.cpp.obj CMakeFiles\circular_buffer_demo.dir\example\Binary_Heap_demo.cpp.obj
+build circular_buffer_demo.exe: CXX_EXECUTABLE_LINKER__circular_buffer_demo_Debug CMakeFiles\circular_buffer_demo.dir\example\Circular_Buffer_demo.cpp.obj
   FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
   LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
   LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
@@ -84,6 +76,43 @@ build circular_buffer_demo.exe: CXX_EXECUTABLE_LINKER__circular_buffer_demo_Debu
   TARGET_FILE = circular_buffer_demo.exe
   TARGET_IMPLIB = circular_buffer_demo.lib
   TARGET_PDB = circular_buffer_demo.pdb
+
+# =============================================================================
+# Object build statements for EXECUTABLE target binary_heap_demo
+
+
+#############################################
+# Order-only phony target for binary_heap_demo
+
+build cmake_object_order_depends_target_binary_heap_demo: phony || .
+
+build CMakeFiles\binary_heap_demo.dir\example\Binary_Heap_demo.cpp.obj: CXX_COMPILER__binary_heap_demo_unscanned_Debug C$:\Users\khoip\OneDrive\Desktop\Important\Codes\Custom_Container_Library\example\Binary_Heap_demo.cpp || cmake_object_order_depends_target_binary_heap_demo
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -std:c++20 -MDd
+  INCLUDES = -IC:\Users\khoip\OneDrive\Desktop\Important\Codes\Custom_Container_Library\include
+  OBJECT_DIR = CMakeFiles\binary_heap_demo.dir
+  OBJECT_FILE_DIR = CMakeFiles\binary_heap_demo.dir\example
+  TARGET_COMPILE_PDB = CMakeFiles\binary_heap_demo.dir\
+  TARGET_PDB = binary_heap_demo.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target binary_heap_demo
+
+
+#############################################
+# Link the executable binary_heap_demo.exe
+
+build binary_heap_demo.exe: CXX_EXECUTABLE_LINKER__binary_heap_demo_Debug CMakeFiles\binary_heap_demo.dir\example\Binary_Heap_demo.cpp.obj
+  FLAGS = /DWIN32 /D_WINDOWS /W3 /GR /EHsc /MDd /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\binary_heap_demo.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\binary_heap_demo.dir\
+  TARGET_FILE = binary_heap_demo.exe
+  TARGET_IMPLIB = binary_heap_demo.lib
+  TARGET_PDB = binary_heap_demo.pdb
 
 
 #############################################
@@ -111,6 +140,8 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build binary_heap_demo: phony binary_heap_demo.exe
+
 build circular_buffer_demo: phony circular_buffer_demo.exe
 
 # =============================================================================
@@ -121,7 +152,7 @@ build circular_buffer_demo: phony circular_buffer_demo.exe
 #############################################
 # Folder: C:/Users/khoip/OneDrive/Desktop/Important/Codes/Custom_Container_Library/out/build/x64-Debug
 
-build all: phony circular_buffer_demo.exe
+build all: phony circular_buffer_demo.exe binary_heap_demo.exe
 
 # =============================================================================
 # Built-in targets

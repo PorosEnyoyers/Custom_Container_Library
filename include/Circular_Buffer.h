@@ -49,7 +49,6 @@ namespace custom
 			std::fill(m_data.begin(), m_data.end(), value);
 		}
 		~circular_buffer() = default;
-		//Move constructors
 		
 		//Functions for metadata
 		constexpr size_type size() const noexcept

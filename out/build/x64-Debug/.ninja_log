@@ -1,3 +1,15 @@
 # ninja log v6
-56	597	8038289756694618	CMakeFiles/circular_buffer_demo.dir/example/Circular_Buffer_demo.cpp.obj	90bb89d47915ddcc
+5	864	8048395808346922	CMakeFiles/circular_buffer_demo.dir/example/Circular_Buffer_demo.cpp.obj	90bb89d47915ddcc
 598	716	8038289762116158	circular_buffer_demo.exe	56162f3adcffc7a8
+13	984	8048395808430966	CMakeFiles/circular_buffer_demo.dir/example/Binary_Heap_demo.cpp.obj	d708680259e8f02b
+30	691	8048398274765737	CMakeFiles/binary_heap_demo.dir/example/Binary_Heap_demo.cpp.obj	10d98e868d8c4a44
+692	964	8048398281377739	binary_heap_demo.exe	cb86d1e2abd81f13
+28	712	8048398555600848	CMakeFiles/binary_heap_demo.dir/example/Binary_Heap_demo.cpp.obj	10d98e868d8c4a44
+713	872	8048398562456457	binary_heap_demo.exe	cb86d1e2abd81f13
+28	703	8048398811991447	CMakeFiles/binary_heap_demo.dir/example/Binary_Heap_demo.cpp.obj	10d98e868d8c4a44
+704	850	8048398818754320	binary_heap_demo.exe	cb86d1e2abd81f13
+38	698	8048399315544831	CMakeFiles/binary_heap_demo.dir/example/Binary_Heap_demo.cpp.obj	10d98e868d8c4a44
+698	870	8048399322154073	binary_heap_demo.exe	cb86d1e2abd81f13
+28	670	8048399476851372	CMakeFiles/binary_heap_demo.dir/example/Binary_Heap_demo.cpp.obj	10d98e868d8c4a44
+671	806	8048399483278542	binary_heap_demo.exe	cb86d1e2abd81f13
+41	296	8048436810209384	circular_buffer_demo.exe	56162f3adcffc7a8
