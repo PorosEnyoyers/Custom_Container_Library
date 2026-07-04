@@ -1,13 +1,3 @@
 # ninja log v6
-3	506	8038280444756481	CMakeFiles/circular_buffer_demo.dir/example/Circular_Buffer_demo.cpp.obj	90bb89d47915ddcc
-507	740	8038280449794001	circular_buffer_demo.exe	56162f3adcffc7a8
-22	578	8038284346481461	CMakeFiles/circular_buffer_demo.dir/example/Circular_Buffer_demo.cpp.obj	90bb89d47915ddcc
-579	747	8038284352049577	circular_buffer_demo.exe	56162f3adcffc7a8
-56	592	8038287917617808	CMakeFiles/circular_buffer_demo.dir/example/Circular_Buffer_demo.cpp.obj	90bb89d47915ddcc
-593	721	8038287922978783	circular_buffer_demo.exe	56162f3adcffc7a8
-49	600	8038288095894966	CMakeFiles/circular_buffer_demo.dir/example/Circular_Buffer_demo.cpp.obj	90bb89d47915ddcc
-601	724	8038288101412756	circular_buffer_demo.exe	56162f3adcffc7a8
-48	597	8038289408697474	CMakeFiles/circular_buffer_demo.dir/example/Circular_Buffer_demo.cpp.obj	90bb89d47915ddcc
-598	722	8038289414183306	circular_buffer_demo.exe	56162f3adcffc7a8
 56	597	8038289756694618	CMakeFiles/circular_buffer_demo.dir/example/Circular_Buffer_demo.cpp.obj	90bb89d47915ddcc
 598	716	8038289762116158	circular_buffer_demo.exe	56162f3adcffc7a8

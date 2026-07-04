@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(circular_buffer_demo
     example/Circular_Buffer_demo.cpp
-)
+ "include/Binary_Heap.h" "example/Binary_Heap_demo.cpp")
 
 target_include_directories(circular_buffer_demo PRIVATE
     include

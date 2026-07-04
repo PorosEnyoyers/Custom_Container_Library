@@ -49,6 +49,8 @@ namespace custom
 			std::fill(m_data.begin(), m_data.end(), value);
 		}
 		~circular_buffer() = default;
+		//Move constructors
+		
 		//Functions for metadata
 		constexpr size_type size() const noexcept
 		{
@@ -236,12 +238,12 @@ namespace custom
 		}
 		self_type& operator+=(difference_type const offset)
 		{
-			difference_type next = (m_index + offset) % m_buffer->capacity();
+			difference_type next = static_cast<difference_type>(m_index) + offset;
 
-			if (next >= m_buffer->size())
+			if (next < 0 || next > m_buffer->size())
 				throw std::out_of_range("Iterator are moving pass the allowed range!!!");
 
-			m_index = next;
+			m_index = static_cast<size_type>(next);
 			return *this;
 		}
 		self_type& operator-=(difference_type const offset)
@@ -293,7 +295,7 @@ namespace custom
 		{
 			if (m_buffer->empty() || !(this->in_bounds()))
 				throw std::logic_error("Cannot dereferentiate the iterator!!!");
-			return m_buffer->m_data[(m_buffer->m_head + m_index) % m_buffer->capacity()];
+			return (*m_buffer)[m_index];
 		}
 		pointer operator->() const
 		{
